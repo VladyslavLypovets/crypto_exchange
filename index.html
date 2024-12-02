@@ -267,6 +267,147 @@
         </div>
     </header>
 
+    <section class="order-block">
+        <template id="coin-list">
+            <div class="coins-list_item coins-list_item">
+                <div class="coins-list_item-block">
+                    <div class="coins-list_item-block-info">
+                        <div class="image">
+                            <img src="https://swapuz.com/img/coin/user/22fe07ba-1188-44d1-92c6-00994cfc92e2.png" alt="" data-img>
+                        </div>
+                        <div class="info">
+                            <div class="coin-name">
+                                <span data-code></span>
+                                <span class="name" data-name>Bitcoin</span>
+                            </div>
+                            <div class="networks">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </template>
+        <template id="network-in-list">
+            <div class="item" data-network-code>BTC</div>
+        </template>
+        <div class="container">
+            <div class="order-block-inner">
+                <div class="order-block_text">
+                    <h1 class="head-text">
+                        Simple <br /> exchange 
+                        <span class="head-text_count" id="order-block-count">0</span><span class="head-text_count">+</span><br />
+                        cryptocurrencies
+                        <span class="head-text_count"></span>
+                    </h1>
+                    <h5 class="text-desc">Fast crypto swaps with Web3 connection</h5>
+                    <div class="buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.swapuz.mobile" target="_blank">
+                            <img src="./img/googlePlay.png" alt="Fast crypto swaps with Web3 connection mobile">
+                        </a>
+                    </div>
+                </div>
+                <div class="order-block-main_exchange">
+                    <div class="exchange-main_block">
+                        <div class="inputs">
+                            <div class="inputs-exchange d-none" id="exchange-form">
+                                <div class="calc-form">
+                                    <div class="fixed-rate">
+                                        <h2 class="title">Exchange</h2>
+                                        <div class="fixed-rate_block">
+                                            <div class="fixed-rate_text">
+                                                <div class="fixed-rate_text-container" id="fixed">
+                                                    <img src="./img/fixed-rate.svg" alt="Fixed rate">
+                                                    Fixed rate
+                                                </div>
+                                                <div class="fixed-rate_text-container d-none" id="floating">
+                                                    <img src="./img/floating-rate.svg" alt="Floating rate">
+                                                    Floating rate
+                                                </div>
+                                            </div>
+                                            <div class="info_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2125_873)"><path d="M9.16797 5.83329H10.8346V7.49996H9.16797V5.83329ZM9.16797 9.16663H10.8346V14.1666H9.16797V9.16663ZM10.0013 1.66663C5.4013 1.66663 1.66797 5.39996 1.66797 9.99996C1.66797 14.6 5.4013 18.3333 10.0013 18.3333C14.6013 18.3333 18.3346 14.6 18.3346 9.99996C18.3346 5.39996 14.6013 1.66663 10.0013 1.66663ZM10.0013 16.6666C6.3263 16.6666 3.33464 13.675 3.33464 9.99996C3.33464 6.32496 6.3263 3.33329 10.0013 3.33329C13.6763 3.33329 16.668 6.32496 16.668 9.99996C16.668 13.675 13.6763 16.6666 10.0013 16.6666Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath id="clip0_2125_873"><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                                <div class="info_icon--text">
+                                                    The receipt amount will be adjusted until you deposit is confirmed
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-select has-select you-send">
+                                        <div class="text-input">
+                                            <input type="text" class="input-wrapper" data-send-input>
+                                            <span class="input-label">You send</span>
+                                        </div>
+                                        <div class="select-input" data-crypto-send-select>
+                                            <div class="select-input_block">
+                                                <img class="selected-item_img" src="" alt="Send crypto" data-crypto-send-img>
+                                                <div class="select-input_coin">
+                                                    <div class="select-input_name" data-crypto-send-code></div>
+                                                    <span class="select-input_network" data-crypto-send-type></span>
+                                                </div>
+                                            </div>
+                                            <div class="select-input_arrow">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 7.3748L0 1.3748L1.075 0.299805L6 5.2498L10.925 0.324804L12 1.3998L6 7.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                            </div>
+                                        </div>
+                                        <div class="items d-none" data-crypto-send-select-inner>
+                                            <div class="input-search_block">
+                                                <div class="input-search">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="input-search_icon"><g clip-path="url(#clip0_1_3158)"><path d="M24.8602 23.2029L19.3382 17.6581C20.758 16.0286 21.5359 13.9784 21.5359 11.844C21.5359 6.85722 17.3336 2.8 12.1684 2.8C7.00316 2.8 2.80078 6.85722 2.80078 11.844C2.80078 16.8308 7.00316 20.888 12.1684 20.888C14.1074 20.888 15.9553 20.3233 17.5352 19.2514L23.0991 24.8382C23.3317 25.0714 23.6445 25.2 23.9797 25.2C24.2969 25.2 24.5979 25.0832 24.8264 24.8709C25.3119 24.4199 25.3274 23.672 24.8602 23.2029ZM12.1684 5.15931C15.9863 5.15931 19.0922 8.15798 19.0922 11.844C19.0922 15.53 15.9863 18.5287 12.1684 18.5287C8.35046 18.5287 5.2445 15.53 5.2445 11.844C5.2445 8.15798 8.35046 5.15931 12.1684 5.15931Z" fill="#02C076"></path></g><defs><clipPath id="clip0_1_3158"><rect width="28" height="28" fill="white"></rect></clipPath></defs></svg>
+                                                    <input type="text" placeholder="Search from 812 coins">
+                                                </div>
+                                            </div>
+                                            <div class="items--list">
+                                                <div class="coins-list_header coins-list_header-selected">Selected</div>
+                                                <div class="coins-list_item coins-list_selected">
+                                                    <div class="coins-list_item-block">
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image image-active">
+                                                                <img src="" data-selected-img alt="">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    <span data-selected-code></span>
+                                                                    <span class="name" data-selected-name></span>
+                                                                </div>
+                                                                <div class="networks" data-selected-network-list>
+                                                                    <div class="item">ETH</div>
+                                                                    <div class="item">OPTIMISM</div>
+                                                                    <div class="item item-active">BSC</div>
+                                                                    <div class="item">ARBITRUM</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="coins-list">
+                                                    <div class="coins-list_header">All coins</div>
+                                                    <div data-list>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loader" id="exchange-loader">
+                                <img src="./img/loader.svg" alt="Loader">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="features-plates">
         <div class="container">
             <div class="features-plates_block">
@@ -409,7 +550,9 @@
     </div>
 
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/crypto.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/exchange.js"></script>
 </body>
 
 </html>

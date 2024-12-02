@@ -72,6 +72,40 @@
         margin:auto;
     }
 
+    .order-block-inner {
+        flex-direction: column;
+    }
+
+    .order-block {
+        margin-top:20px;
+    }
+
+    .order-block_text {
+        max-width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+
+    .order-block_text .head-text {
+        font-size:36px;
+        line-height: 38px;
+        text-align: center
+    }
+
+
+    .order-block_text .text-desc {
+        font-size:14px;
+        line-height: 20px;
+        text-align: center;
+        max-width: 336px
+    }
+
+    .order-block_text .buttons {
+        display:none;
+    }
+
     .allow-cookies-message {
         height:auto;
         padding: 8px 10px 8px 12px;
@@ -192,4 +226,83 @@
         flex-direction:column;
         gap: 20px;
     }
+
+    .input-select {
+        height:60px;
+        width: 100%
+    }
+
+    .input-select_opened {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%
+    }
+
+    .input-select.has-select .text-input {
+        max-width:70%
+    }
+
+    .input-select .select-input {
+        padding:12px 6px 12px 12px;
+        max-width: 120px
+    }
+
+    .input-select .text-input input+.input-label {
+        top:20px
+    }
+
+    .input-select .items {
+        border-radius:0;
+        height: 100vh;
+        background: #1B1A1C;
+        position: fixed
+    }
+
+    .input-select .items-header {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 12px 12px 20px;
+        box-sizing: border-box
+    }
+
+    .input-select .items .input-search {
+        background:none
+    }
+
+    .input-select .items .input-search_block {
+        padding: 0 12px;
+        box-sizing: border-box
+    }
+
+    .input-select .items .input-search .input-search_icon {
+        left:12px
+    }
+
+    .input-select .items .input-search input {
+        height:60px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        padding: 18px 0 18px 48px;
+        background: #29282A
+    }
+
+    .input-select .items .coins-list {
+        max-height:100%
+    }
+
+    .input-select .items .coins-list+body {
+        overflow: hidden
+    }
+
+    .input-select .items--list {
+        height:calc(100vh - 210px);
+        background: none
+    }
+
+    
 }

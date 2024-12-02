@@ -32,4 +32,19 @@ $(document).ready(function(){
         $('#support-block').addClass('d-none');
     })
 
+    // order block count animation
+    const countTill = cryptoData.length;
+    let step = Math.round(countTill / 50);
+    let index = 0;
+    const interval = setInterval(() => {
+        const difference = countTill - index;
+        if (index === countTill) {
+            clearInterval(interval);
+        }
+        index += step;
+        if (index >= countTill) {
+            index = countTill;
+        }
+        $('#order-block-count').text(index);
+    }, 70);
 });

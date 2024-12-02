@@ -1948,39 +1948,8 @@
 }
 
 
-.input-select {
-    display: flex;
-    height: 60px;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    justify-content: center;
-    gap: 2px;
-    border-radius: 8px
-}
 
-@media (max-width: 1079px) {
-    .input-select {
-        height:60px;
-        width: 100%
-    }
 
-    .input-select_opened {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        width: 100%
-    }
-}
-
-.input-select:focus-within {
-    box-shadow: 0 0 0 2px #02c076
-}
-
-.input-select:focus-within .input-label {
-    color: #02c076!important
-}
 
 .input-select.error:focus-within {
     box-shadow: 0 0 0 2px #ff783e
@@ -1994,126 +1963,8 @@
     display: flex!important
 }
 
-.input-select.has-select .text-input {
-    max-width: 294px;
-    position: relative
-}
 
-.input-select.has-select .text-input .icon {
-    top: 16px;
-    bottom: 0;
-    margin: auto 0;
-    display: grid;
-    place-items: center
-}
 
-@media (max-width: 1079px) {
-    .input-select.has-select .text-input {
-        max-width:70%
-    }
-}
-
-.input-select.has-select .select-input {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-
-.input-select.has-select .select-input .selected-item {
-    transition: all .3s ease-in-out
-}
-
-.input-select.has-select .select-input .selected-item_img {
-    max-width: 28px;
-    border-radius: 50%;
-    overflow: hidden
-}
-
-.input-select.has-select .select-input_block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px
-}
-
-.input-select.has-select .select-input_coin {
-    display: flex;
-    flex-direction: column;
-    gap: 2px
-}
-
-.input-select.has-select .select-input_name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    color: #fff;
-    cursor: pointer;
-    overflow: hidden
-}
-
-.input-select.has-select .select-input_network {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #ffffff61
-}
-
-.input-select.has-select .select-input_arrow {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.input-select.has-select .select-input .input-label {
-    position: relative;
-    top: 0
-}
-
-.input-select.has-select .select-input:hover {
-    cursor: pointer
-}
-
-.input-select.has-select .select-input:hover .selected-item {
-    color: #02c076
-}
-
-.input-select .select-input,.input-select .text-input {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    transition: all .6s ease-in-out
-}
-
-.input-select .select-input:hover,.input-select .text-input:hover {
-    cursor: pointer;
-    background: linear-gradient(0deg,rgba(255,255,255,.04),rgba(255,255,255,.04)),#363537
-}
-
-.input-select .select-input:hover .loader,.input-select .text-input:hover .loader {
-    background-color: #3e3d3f
-}
-
-.input-select .select-input {
-    max-width: 136px;
-    width: 100%;
-    box-sizing: border-box;
-    cursor: pointer;
-    padding: 12px 12px 12px 16px;
-    background: #363537;
-    border-radius: 0 8px 8px 0
-}
-
-@media (max-width: 1079px) {
-    .input-select .select-input {
-        padding:12px 6px 12px 12px;
-        max-width: 120px
-    }
-}
 
 .input-select .select-input.open .selected-item {
     color: #02c076
@@ -2130,16 +1981,6 @@
     color: #fff;
     cursor: pointer;
     overflow: hidden
-}
-
-.input-select .text-input {
-    position: relative;
-    width: 100%;
-    background: #363537;
-    padding: 10px 12px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 8px 0 0 8px
 }
 
 .input-select .text-input .loader {
@@ -2198,82 +2039,9 @@
     display: none
 }
 
-.input-select .text-input .input-label {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #ffffff61;
-    position: absolute;
-    top: 8px;
-    max-width: calc(100% - 32px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-sizing: border-box;
-    display: block;
-    white-space: nowrap
-}
-
-.input-select .text-input input {
-    border: none;
-    outline: none;
-    background: transparent;
-    box-shadow: none;
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 600;
-    color: #fff;
-    width: 100%;
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    padding: 0 12px;
-    height: 24px;
-    box-sizing: border-box;
-    caret-color: #02c076;
-    font-family: Inter,sans-serif
-}
-
-.input-select .text-input input.has-label {
-    transform: translateY(8px)
-}
-
-.input-select .text-input input::-webkit-outer-spin-button,.input-select .text-input input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0
-}
-
-.input-select .text-input input[type=number] {
-    -moz-appearance: textfield
-}
-
-.input-select .text-input input::placeholder {
-    color: #1b1a1c52;
-    font-weight: 500;
-    font-size: 16px
-}
-
-.input-select .text-input input+.input-label {
-    font-size: 16px;
-    top: 24px;
-    color: #1b1a1c52;
-    transition: color .3s linear,top .3s linear,font-size .3s linear;
-    z-index: 1;
-    line-height: 16px;
-    font-weight: 500
-}
-
 @media (max-width: 1079px) {
-    .input-select .text-input input+.input-label {
-        top:20px
-    }
 }
 
-.input-select .text-input input:focus:not([readonly])+.input-label,.input-select .text-input input.focus+.input-label {
-    color: #ffffff61;
-    font-size: 12px;
-    line-height: 16px;
-    top: 10px
-}
 
 .input-select .items {
     border-radius: 8px;
@@ -2427,23 +2195,6 @@
     outline: none
 }
 
-.input-select .items--list {
-    margin-top: 6px;
-    background: #363537;
-    box-shadow: 0 4px 12px #1b1a1ca3;
-    border-radius: 8px;
-    padding-top: 6px;
-    overflow-y: auto;
-    overflow-x: hidden
-}
-
-@media (max-width: 1079px) {
-    .input-select .items--list {
-        height:calc(100vh - 210px);
-        background: none
-    }
-}
-
 .input-select .items .search {
     height: 64px;
     display: flex;
@@ -2522,207 +2273,6 @@
     fill-opacity: 1
 }
 
-.input-select .items .coins-list_header {
-    margin-top: 12px;
-    margin-left: 20px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    color: #ffffff61
-}
-
-.input-select .items .coins-list_header-selected {
-    margin-top: 0
-}
-
-.input-select .items .coins-list_item {
-    font-weight: 600;
-    font-size: 16px;
-    color: #1b1a1c;
-    box-sizing: border-box;
-    cursor: pointer
-}
-
-.input-select .items .coins-list_item-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 9px 16px;
-    box-sizing: border-box;
-    transition: all .4s ease-in-out
-}
-
-.input-select .items .coins-list_item-block:hover {
-    background: rgba(255,255,255,.04)
-}
-
-.input-select .items .coins-list_item-block-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px
-}
-
-.input-select .items .coins-list_item-block-info .image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: border,outline .2s ease-in-out;
-    border-radius: 50px;
-    overflow: hidden;
-    min-width: 28px
-}
-
-.input-select .items .coins-list_item-block-info .image-active {
-    border: 2px solid rgba(255,255,255,.04);
-    box-shadow: 0 0 0 2px #02c076
-}
-
-.input-select .items .coins-list_item-block-info .image img {
-    max-width: 28px
-}
-
-.input-select .items .coins-list_item-block-info .info {
-    display: flex;
-    flex-direction: column;
-    gap: 2px
-}
-
-.input-select .items .coins-list_item-block-info .info .coin-name {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff
-}
-
-.input-select .items .coins-list_item-block-info .info .coin-name span {
-    margin-left: 2px;
-    font-weight: 400;
-    color: #ffffff61
-}
-
-.input-select .items .coins-list_item-block-info .info .networks {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap
-}
-
-.input-select .items .coins-list_item-block-info .info .networks .item {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #ffffff61;
-    margin-right: 4px
-}
-
-.input-select .items .coins-list_item-block-info .info .networks .item-active {
-    color: #02c076
-}
-
-.input-select .items .coins-list_item-block-info .info .networks .item:after {
-    content: " /";
-    color: #ffffff1f
-}
-
-.input-select .items .coins-list_item-block-info .info .networks .item:last-child:after {
-    content: ""
-}
-
-.input-select .items .coins-list_item-block .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .2s ease-in-out
-}
-
-.input-select .items .coins-list_item-block .arrow svg path {
-    fill: #ffffff61;
-    fill-opacity: 1
-}
-
-.input-select .items .coins-list_item-block_active .arrow,.input-select .items .coins-list_item-block_selected .arrow {
-    transition: all .2s ease-in-out
-}
-
-.input-select .items .coins-list_item-block_active .coins-list_item-block-info .info .coin-name,.input-select .items .coins-list_item-block_selected .coins-list_item-block-info .info .coin-name,.input-select .items .coins-list_item-block_active .coins-list_item-block-info .info .coin-name span,.input-select .items .coins-list_item-block_selected .coins-list_item-block-info .info .coin-name span {
-    color: #02c076
-}
-
-.input-select .items .coins-list_item-block_active .image {
-    position: relative;
-    display: flex;
-    align-items: center;
-    left: -2px;
-    justify-content: center;
-    border-radius: 50px;
-    overflow: hidden;
-    border: 2px solid rgba(255,255,255,.04);
-    box-shadow: 0 0 0 2px #02c076
-}
-
-.input-select .items .coins-list_item-block_active .image img {
-    max-width: 28px;
-    border-radius: 50px
-}
-
-.input-select .items .coins-list_item-block_active .info {
-    position: relative;
-    left: -4px
-}
-
-.input-select .items .coins-list_item-block_active .arrow {
-    transform: rotate(-180deg)
-}
-
-.input-select .items .coins-list_item-block_active .arrow svg g path {
-    fill: #02c076!important;
-    fill-opacity: 1
-}
-
-.input-select .items .coins-list_item--networks {
-    padding: 9px 16px 9px 56px;
-    box-sizing: border-box;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-    transition: all .4s ease-in-out;
-    background: rgba(27,26,28,.03)
-}
-
-.input-select .items .coins-list_item--networks:hover,.input-select .items .coins-list_item--networks:active {
-    background: rgba(255,255,255,.04)
-}
-
-.input-select .items .coins-list_item--networks-active {
-    cursor: default;
-    color: #02c076;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center
-}
-
-.input-select .items .coins-list_item--networks-active:hover {
-    background: rgba(27,26,28,.03)
-}
-
-.input-select .items .coins-list_item--networks span {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #ffffff61
-}
-
-.input-select .items .coins-list_item-disabled {
-    mix-blend-mode: luminosity;
-    opacity: .25;
-    cursor: default
-}
-
-.input-select .items .coins-list_item-disabled .coins-list_item-block:hover {
-    background: none
-}
 
 .curs-up .text-input input {
     color: #02c076
@@ -2761,126 +2311,28 @@
     }
 }
 
-.order-block-main {
-    width: 100%;
-    margin-top: 88px;
-    position: relative;
-    z-index: 9
-}
-
-@media (max-width: 1079px) {
-    .order-block-main {
-        margin-top:20px
-    }
-}
-
-.order-block-main .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-
-@media (max-width: 1079px) {
-    .order-block-main .container {
-        flex-direction:column
-    }
-}
-
-.order-block-main_text {
-    max-width: 520px;
-    width: 100%
-}
-
-@media (max-width: 1079px) {
-    .order-block-main_text {
-        max-width:100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
-}
-
-.order-block-main_text .head-text {
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 62px;
-    letter-spacing: -.02em;
-    color: #fff
-}
-
-@media (max-width: 1079px) {
-    .order-block-main_text .head-text {
-        font-size:36px;
-        line-height: 38px;
-        text-align: center
-    }
-}
-
-.order-block-main_text .head-text_count {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap
-}
-
-.order-block-main_text .head-text b {
-    display: flex;
-    color: #02c076
-}
-
-.order-block-main_text .text-desc {
-    margin-top: 24px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 28px;
-    color: #fff
-}
-
-@media (max-width: 1079px) {
-    .order-block-main_text .text-desc {
-        font-size:14px;
-        line-height: 20px;
-        text-align: center;
-        max-width: 336px
-    }
-}
-
-.order-block-main_text .buttons {
-    margin-top: 32px
-}
-
-@media (max-width: 1079px) {
-    .order-block-main_text .buttons {
-        display:none
-    }
-}
-
-.order-block-main_text .buttons svg {
-    max-width: 162px
-}
-
-.order-block-main_exchange {
+.order-block_exchange {
     display: flex;
     justify-content: center
 }
 
-.order-block-main_exchange .exchange-main_block {
+.order-block_exchange .exchange-main_block {
     width: 520px
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block {
+    .order-block_exchange .exchange-main_block {
         max-width:100%;
         margin-top: 32px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .buttons {
+.order-block_exchange .exchange-main_block .buttons {
     display: flex;
     flex-direction: row
 }
 
-.order-block-main_exchange .exchange-main_block .buttons--item {
+.order-block_exchange .exchange-main_block .buttons--item {
     padding: 18px;
     box-sizing: border-box;
     background: rgba(255,255,255,.03);
@@ -2894,26 +2346,26 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .buttons--item {
+    .order-block_exchange .exchange-main_block .buttons--item {
         font-size:16px;
         line-height: 24px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .buttons--item_active {
+.order-block_exchange .exchange-main_block .buttons--item_active {
     background: #29282A;
     color: #fff
 }
 
-.order-block-main_exchange .exchange-main_block .buttons .exchange {
+.order-block_exchange .exchange-main_block .buttons .exchange {
     border-radius: 20px 0 0
 }
 
-.order-block-main_exchange .exchange-main_block .buttons .network {
+.order-block_exchange .exchange-main_block .buttons .network {
     border-radius: 0 20px 0 0
 }
 
-.order-block-main_exchange .exchange-main_block .inputs {
+.order-block_exchange .exchange-main_block .inputs {
     border-radius: 20px;
     box-sizing: border-box;
     padding: 28px 44px 44px;
@@ -2922,23 +2374,23 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs {
+    .order-block_exchange .exchange-main_block .inputs {
         min-height:100%;
         padding: 12px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs-exchange {
+.order-block_exchange .exchange-main_block .inputs-exchange {
     display: flex;
     justify-content: center
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form {
+.order-block_exchange .exchange-main_block .inputs .calc-form {
     position: relative;
     width: 100%
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form_loader {
+.order-block_exchange .exchange-main_block .inputs .calc-form_loader {
     background: #29282A;
     min-height: 337px;
     display: grid;
@@ -2946,19 +2398,19 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .calc-form_loader {
+    .order-block_exchange .exchange-main_block .inputs .calc-form_loader {
         min-height:289px
     }
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .calc-form {
+    .order-block_exchange .exchange-main_block .inputs .calc-form {
         max-width:432px;
         width: 100%
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .you-send .error-text {
+.order-block_exchange .exchange-main_block .inputs .calc-form .you-send .error-text {
     position: relative;
     top: 7px;
     left: 12px;
@@ -2966,7 +2418,7 @@
     font-size: 12px
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap {
+.order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2978,18 +2430,18 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap {
+    .order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap {
         padding-bottom:8px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap .minimum-amount {
+.order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap .minimum-amount {
     flex-grow: 1;
     margin-bottom: 0;
     margin-top: 0
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap .swap-coins {
+.order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap .swap-coins {
     margin-top: 4px;
     width: 24px;
     height: 24px;
@@ -3002,12 +2454,12 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap .swap-coins {
+    .order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap .swap-coins {
         margin-top:0
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap .swap-coins svg {
+.order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap .swap-coins svg {
     position: relative;
     top: 0;
     left: 0;
@@ -3015,17 +2467,17 @@
     right: 0
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap .rate-swap:before {
+.order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap .rate-swap:before {
     content: "";
     flex-basis: 100%;
     order: 1
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .calc-form .rate-swap .rate-swap.min-width-exceeded:before {
+.order-block_exchange .exchange-main_block .inputs .calc-form .rate-swap .rate-swap.min-width-exceeded:before {
     order: 2
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3036,14 +2488,14 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .fixed-rate {
+    .order-block_exchange .exchange-main_block .inputs .fixed-rate {
         margin-bottom:16px;
         margin-top: 4px;
         padding: 0 12px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_text-container {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_text-container {
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
@@ -3056,23 +2508,23 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .fixed-rate_text-container {
+    .order-block_exchange .exchange-main_block .inputs .fixed-rate_text-container {
         pointer-events:none
     }
 }
 
 @media (min-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .fixed-rate_text-container:hover {
+    .order-block_exchange .exchange-main_block .inputs .fixed-rate_text-container:hover {
         cursor:pointer;
         color: #01ad6a
     }
 
-    .order-block-main_exchange .exchange-main_block .inputs .fixed-rate_text-container:hover svg path {
+    .order-block_exchange .exchange-main_block .inputs .fixed-rate_text-container:hover svg path {
         fill: #01ad6a
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate .title {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate .title {
     font-family: Roboto,sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -3082,46 +2534,46 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .fixed-rate .title {
+    .order-block_exchange .exchange-main_block .inputs .fixed-rate .title {
         font-size:16px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_floating {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_floating {
     color: #ffffff61
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_floating svg path {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_floating svg path {
     fill: #ffffff61
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_block {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6px
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon {
     position: relative;
     display: grid;
     place-items: center
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon svg path {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon svg path {
     transition: all .3s ease-in-out
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon svg:hover {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon svg:hover {
     cursor: pointer
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon svg:hover path {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon svg:hover path {
     fill: #02c076;
     fill-opacity: 1
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon--text {
+.order-block_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon--text {
     position: absolute;
     z-index: 999;
     top: calc(100% + 8px);
@@ -3139,19 +2591,19 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon--text {
+    .order-block_exchange .exchange-main_block .inputs .fixed-rate_block .info_icon--text {
         right:-22px;
         left: unset
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .swap-coins {
+.order-block_exchange .exchange-main_block .inputs .swap-coins {
     position: relative;
     height: 1px;
     width: 100%
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .swap-coins svg {
+.order-block_exchange .exchange-main_block .inputs .swap-coins svg {
     position: absolute;
     right: 12px;
     top: -35px;
@@ -3159,37 +2611,37 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .swap-coins svg {
+    .order-block_exchange .exchange-main_block .inputs .swap-coins svg {
         top:-32px;
         right: 6px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .swap-coins svg:hover {
+.order-block_exchange .exchange-main_block .inputs .swap-coins svg:hover {
     cursor: pointer;
     transform: rotate(180deg)
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .swap-coins svg:hover path {
+.order-block_exchange .exchange-main_block .inputs .swap-coins svg:hover path {
     fill: #01ad6a
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .main_button {
+.order-block_exchange .exchange-main_block .inputs .main_button {
     margin-top: 24px
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .main_button {
+    .order-block_exchange .exchange-main_block .inputs .main_button {
         max-width:100%;
         margin-top: 0
     }
 
-    .order-block-main_exchange .exchange-main_block .inputs .main_button-text {
+    .order-block_exchange .exchange-main_block .inputs .main_button-text {
         font-size: 16px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .minimum-amount {
+.order-block_exchange .exchange-main_block .inputs .minimum-amount {
     margin-top: 8px;
     margin-bottom: 23px;
     padding-left: 12px;
@@ -3200,20 +2652,20 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .minimum-amount {
+    .order-block_exchange .exchange-main_block .inputs .minimum-amount {
         margin-bottom:15px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .minimum-amount span {
+.order-block_exchange .exchange-main_block .inputs .minimum-amount span {
     color: #fff
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .minimum-amount_error {
+.order-block_exchange .exchange-main_block .inputs .minimum-amount_error {
     color: #ff783e
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .exchange-rate {
+.order-block_exchange .exchange-main_block .inputs .exchange-rate {
     margin-top: 8px;
     padding-left: 12px;
     font-weight: 500;
@@ -3223,12 +2675,12 @@
 }
 
 @media (max-width: 1079px) {
-    .order-block-main_exchange .exchange-main_block .inputs .exchange-rate {
+    .order-block_exchange .exchange-main_block .inputs .exchange-rate {
         margin-bottom:20px
     }
 }
 
-.order-block-main_exchange .exchange-main_block .inputs .exchange-rate span {
+.order-block_exchange .exchange-main_block .inputs .exchange-rate span {
     color: #ffffff61
 }
 
