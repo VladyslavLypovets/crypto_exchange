@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-block header-block_desktop">
+                <div class="header-block-main">
+                    <a href="./index.html" class="router-link-active router-link-exact-active">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="./about-us.html" class="item">About</a>
+                    <a href="./contact.html" class="item">Contacts</a>
+                </div>
+                <div class="lang" id="lang">
+                    <span class="flag">
+                        <img src="./img/en.svg" alt="Active Lang" id="active-lang-img">
+                    </span>
+                    <div class="selected-lang-text">
+                        <span id="active-lang-text">
+                            English
+                        </span>
+                        <img src="./img/chewron-down.svg" alt="chewron-down">
+                    </div>
+                    <div class="selected-lang-text_mob" id="active-lang-text-mobile">En</div>
+                    <div class="lang--block d-none" id="lang-list">
+                        <div class="item d-none" data-value="en">
+                            <span class="flag">
+                                <img src="./img/en.svg" alt="english">
+                            </span>
+                            <span class="lang-text">
+                                English
+                            </span>
+                        </div>
+                        <div class="item" data-value="ru">
+                            <span class="flag">
+                                <img src="./img/ru.svg" alt="Русский">
+                            </span>
+                            <span class="lang-text">
+                                Русский
+                            </span>
+                        </div>
+                        <div class="item" data-value="de">
+                            <span class="flag">
+                                <img src="./img/de.svg" alt="deutsch">
+                            </span>
+                            <span class="lang-text">
+                                Deutsch
+                            </span>
+                        </div>
+                        <div class="item" data-value="ua">
+                            <span class="flag">
+                                <img src="./img/ua.svg" alt="Українська">
+                            </span>
+                            <span class="lang-text">
+                                Українська
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-block header-block_mob">
+                <div class="menu-block d-none" data-mobile-header-menu>
+                    <div class="menu">
+                        <div class="burger burger-close" data-mobile-header-menu-close>
+                            <img src="./img/close.svg" alt="Close">
+                        </div>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="item"><a href="./index.html">Main</a></div>
+                        <div class="item"><a href="./about-us.html">About</a></div>
+                        <div class="item"><a href="./contact.html">Contacts</a></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="burger" data-mobile-burger>
+                        <img src="./img/burger.svg" alt="Burger">
+                    </div>
+                    <a aria-current="page" href="./index.html" class="router-link-active router-link-exact-active">
+                        <img src="./img/logo.svg" alt="Logo">
+                    </a>
+                    <div class="lang_block">
+                        <div class="lang" data-lang-mobile>
+                            <span class="flag">
+                                <img src="./img/en.svg" alt="English">
+                            </span>
+                            <div class="selected-lang-text_mob">En</div>
+                        </div>
+                        <div class="menu-block d-none" data-lang-list-mobile>
+                            <div class="menu">
+                                <div class="burger burger-close" data-close-lang-list-mobile>
+                                    <img src="./img/close.svg" alt="close">
+                                </div>
+                            </div>
+                            <div class="nav-menu">
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/en.svg" alt="English">
+                                    </span>
+                                    English
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/ru.svg" alt="Русский">
+                                    </span>
+                                    Русский
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/de.svg" alt="Deutsch">
+                                    </span>
+                                    Deutsch
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/ua.svg" alt="Українська">
+                                    </span>
+                                    Українська
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container about-hero-banner">
+            <div class="about-hero_content">
+                <h1 class="title">
+                    Who <span>we</span> are?
+                </h1>
+                <p class="desc">
+                    Swapuz is a fast, unlimited and fully transparent cryptocurrency exchange created in 2019 by a team of professionals that aims to provide its users with a unique cryptocurrency exchange experience by creating an intuitive, simple and user-friendly interface for institutional traders and beginners. Don't bother with CEX and DEX - use Swapuz.
+                </p>
+                <h2 class="title2">Our mission</h2>
+                <p class="desc">
+                    The user always comes first for us, that's why the main mission of Swapuz is to be a reliable provider of exchange products and other services for users of the cryptocurrency ecosystem.
+                </p>
+            </div>
+            <div class="about-hero_img">
+                <img class="about-hero_img--mobile"  src="./img/about-banner-mobile.png" alt="Who we are?">
+                <img class="about-hero_img--desktop" src="./img/about-banner.png" alt="Who we are?">
+            </div>
+        </div>
+
+        <div class="about-features-plates">
+            <div class="container">
+                <div class="about-features-plates_block">
+                    <div class="about-features-plates--item">
+                        <div class="about-features-plates--item-content">
+                            <h3 class="title">100000+ transactions</h3>
+                            <p class="desc">
+                                Swapuz provides the best exchange rate and transparent fee structure with no hidden fee.
+                            </p>
+                        </div>
+                        <img src="./img/transactions.svg" alt="100000+ transactions">
+                    </div>
+                    <div class="about-features-plates--item">
+                        <div class="about-features-plates--item-content">
+                            <h3 class="title">11387 users <br> trust us </h3>
+                            <p class="desc">Users stay with us as Swapuz strives to meet and support everyone's unique needs.</p>
+                        </div>
+                        <img src="./img/users.svg" alt="Users stay with us as">
+                    </div>
+                    <div class="about-features-plates--item">
+                        <div class="about-features-plates--item-content">
+                            <h3 class="title">48 partners growth with us </h3>
+                            <p class="desc">Swapuz offers comprehensive solutions and set of tools to meet the needs of partners.</p>
+                        </div>
+                        <img src="./img/partners.svg" alt="partners growth with us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-features">
+        <div class="container">
+            <div class="about-features_block">
+                <div class="item">
+                    <div class="text">
+                        <h3 class="title">
+                            We are <span>technologies</span>
+                        </h3>
+                        <p class="desc">
+                            Our team was the first on the market to develop and implement unique multi-channel exchange capabilities between CEX and DEX with calculation of all possible details. Our users do not need to manually conduct numerous exchanges to buy, sell, trade and invest tokens that have not yet listed on major CEX or are going to stay exclusively on DEX platforms, as proven Swapuz algorithms have come to the rescue to save your precious time and simplify this process.
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img class="about-features_img--desktop" src="./img/technologies.png" alt="We are technologies">
+                        <img class="about-features_img--mobile" src="./img/technologies-mobile.png" alt="We are technologies">
+                    </div>
+                </div>
+                <div class="item item--reverse">
+                    <div class="text">
+                        <h3 class="title">
+                            We are <span>safety</span>
+                        </h3>
+                        <p class="desc">
+                            Swapuz is half a DeFi project and half a custodial solution, so we strive to comply with all morally correct regulations in order to provide protection and security to users, which is one of the main priorities of our team, and to continue to develop the blockchain industry primarily in terms of technology and capabilities, which is why we have implemented advanced tools to keep all the above aspects and privacy of our customers
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img class="about-features_img--desktop" src="./img/safety.png" alt="We are safety">
+                        <img class="about-features_img--mobile" src="./img/safety-mobile.png" alt="We are safety">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h3 class="title">
+                            We are <span>stability</span>
+                        </h3>
+                        <p class="desc">
+                            Swapuz has ensured that all algorithms and systems are fully tested so that users do not have errors and misunderstandings while using the products. We also provide 24/7 customer support in the most convenient way and we remain partial to any question, you can be sure you are contacting a live expert who is competent in Swapuz services and blockchain technologies. Your every message and action is the most important experience for us.
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img class="about-features_img--desktop" src="./img/stability.png" alt="We are stability">
+                        <img class="about-features_img--mobile" src="./img/stability-mobile.png" alt="We are stability">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer_main">
+                    <img src="./img/logo.svg" alt="Logo">
+                    <p class="footer_main--text">
+                        Do you want to make operations with Swapuz as handy as possible? Add
+                        it to bookmarks in one click!
+                    </p>
+                </div>
+                <div class="footer_links">
+                    <div class="footer_links-nav">
+                        <div class="footer_links--item">
+                            <h4 class="title">Company</h4>
+                            <a href="./about-us.html" class="link">About</a>
+                            <a href="./contact.html" class="link">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="footer_links-socials">
+                        <div class="footer_links--item">
+                            <h4 class="title">Follow Us</h4>
+                            <div class="socials">
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/linkedin.svg" alt="linkedin">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/discord.svg" alt="discord">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/twitter.svg" alt="twitter">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/telegram.svg" alt="telegram">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights">
+                Copyright © 2020 - 2024 Swapuz!
+                <div class="footer-copyrights_links">
+                    <a href="./terms-of-use.html" class="">Terms of Use</a>
+                    <a href="./terms-of-use.html#amlProcedure" class=""> AML/KYC </a>
+                    <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="allow-cookies-message d-none" id="cookies-banner">
+        <div class="message">
+            <p>By continuing to use the site you agree to the
+                <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                and consent to the use of cookies
+            </p>
+            <div class="button" id="agree-use-cookies">I agree</div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

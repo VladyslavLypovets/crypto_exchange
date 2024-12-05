@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-block header-block_desktop">
+                <div class="header-block-main">
+                    <a href="./index.html" class="router-link-active router-link-exact-active">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="./about-us.html" class="item">About</a>
+                    <a href="./contact.html" class="item">Contacts</a>
+                </div>
+                <div class="lang" id="lang">
+                    <span class="flag">
+                        <img src="./img/en.svg" alt="Active Lang" id="active-lang-img">
+                    </span>
+                    <div class="selected-lang-text">
+                        <span id="active-lang-text">
+                            English
+                        </span>
+                        <img src="./img/chewron-down.svg" alt="chewron-down">
+                    </div>
+                    <div class="selected-lang-text_mob" id="active-lang-text-mobile">En</div>
+                    <div class="lang--block d-none" id="lang-list">
+                        <div class="item d-none" data-value="en">
+                            <span class="flag">
+                                <img src="./img/en.svg" alt="english">
+                            </span>
+                            <span class="lang-text">
+                                English
+                            </span>
+                        </div>
+                        <div class="item" data-value="ru">
+                            <span class="flag">
+                                <img src="./img/ru.svg" alt="Русский">
+                            </span>
+                            <span class="lang-text">
+                                Русский
+                            </span>
+                        </div>
+                        <div class="item" data-value="de">
+                            <span class="flag">
+                                <img src="./img/de.svg" alt="deutsch">
+                            </span>
+                            <span class="lang-text">
+                                Deutsch
+                            </span>
+                        </div>
+                        <div class="item" data-value="ua">
+                            <span class="flag">
+                                <img src="./img/ua.svg" alt="Українська">
+                            </span>
+                            <span class="lang-text">
+                                Українська
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-block header-block_mob">
+                <div class="menu-block d-none" data-mobile-header-menu>
+                    <div class="menu">
+                        <div class="burger burger-close" data-mobile-header-menu-close>
+                            <img src="./img/close.svg" alt="Close">
+                        </div>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="item"><a href="./index.html">Main</a></div>
+                        <div class="item"><a href="./about-us.html">About</a></div>
+                        <div class="item"><a href="./contact.html">Contacts</a></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="burger" data-mobile-burger>
+                        <img src="./img/burger.svg" alt="Burger">
+                    </div>
+                    <a aria-current="page" href="./index.html" class="router-link-active router-link-exact-active">
+                        <img src="./img/logo.svg" alt="Logo">
+                    </a>
+                    <div class="lang_block">
+                        <div class="lang" data-lang-mobile>
+                            <span class="flag">
+                                <img src="./img/en.svg" alt="English">
+                            </span>
+                            <div class="selected-lang-text_mob">En</div>
+                        </div>
+                        <div class="menu-block d-none" data-lang-list-mobile>
+                            <div class="menu">
+                                <div class="burger burger-close" data-close-lang-list-mobile>
+                                    <img src="./img/close.svg" alt="close">
+                                </div>
+                            </div>
+                            <div class="nav-menu">
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/en.svg" alt="English">
+                                    </span>
+                                    English
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/ru.svg" alt="Русский">
+                                    </span>
+                                    Русский
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/de.svg" alt="Deutsch">
+                                    </span>
+                                    Deutsch
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/ua.svg" alt="Українська">
+                                    </span>
+                                    Українська
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="copy-tooltip d-none" data-copy-tooltip>
+        Data copied to your clipboard
+    </div>
+
+    <section class="exchange-content">
+        <h1 class="h1">Exchange</h1>
+        
+
+        <div class="order-block-main_exchange">
+            <div class="exchange-main_block">
+                <div class="step-header active" data-step="1">
+                    <span class="number">1</span>
+                    <h2 class="title">Exchange Details</h2>
+                </div>
+                <div class="step-body">
+                    <div class="inputs">
+                        <div class="inputs-exchange d-none" id="exchange-form">
+                            <div class="calc-form">
+                                <div class="fixed-rate">
+                                    <div class="fixed-rate_block">
+                                        <div class="fixed-rate_text">
+                                            <div class="fixed-rate_text-container" id="fixed">
+                                                <img src="./img/fixed-rate.svg" alt="Fixed rate">
+                                                Fixed rate
+                                            </div>
+                                            <div class="fixed-rate_text-container d-none" id="floating">
+                                                <img src="./img/floating-rate.svg" alt="Floating rate">
+                                                Floating rate
+                                            </div>
+                                        </div>
+                                        <div class="info_icon">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2125_873)"><path d="M9.16797 5.83329H10.8346V7.49996H9.16797V5.83329ZM9.16797 9.16663H10.8346V14.1666H9.16797V9.16663ZM10.0013 1.66663C5.4013 1.66663 1.66797 5.39996 1.66797 9.99996C1.66797 14.6 5.4013 18.3333 10.0013 18.3333C14.6013 18.3333 18.3346 14.6 18.3346 9.99996C18.3346 5.39996 14.6013 1.66663 10.0013 1.66663ZM10.0013 16.6666C6.3263 16.6666 3.33464 13.675 3.33464 9.99996C3.33464 6.32496 6.3263 3.33329 10.0013 3.33329C13.6763 3.33329 16.668 6.32496 16.668 9.99996C16.668 13.675 13.6763 16.6666 10.0013 16.6666Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath id="clip0_2125_873"><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                            <div class="info_icon--text">
+                                                The receipt amount will be adjusted until you deposit is confirmed
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-select has-select you-send">
+                                    <div class="text-input">
+                                        <input type="text" class="input-wrapper" data-send-input>
+                                        <span class="input-label">You send</span>
+                                    </div>
+                                    <div class="select-input" data-select>
+                                        <div class="select-input_block">
+                                            <img class="selected-item_img" src="./img/crypto/btc.png" alt="Send crypto" data-send-coin-img>
+                                            <div class="select-input_coin">
+                                                <div class="select-input_name" data-send-coin-name>BTC</div>
+                                                <span class="select-input_network" data-send-coin-network>BTC</span>
+                                            </div>
+                                        </div>
+                                        <div class="select-input_arrow">
+                                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 7.3748L0 1.3748L1.075 0.299805L6 5.2498L10.925 0.324804L12 1.3998L6 7.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                        </div>
+                                    </div>
+                                    <div class="items d-none" data-select-list="send">
+                                        <div class="input-search_block">
+                                            <div class="input-search">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="input-search_icon"><g clip-path="url(#clip0_1_3158)"><path d="M24.8602 23.2029L19.3382 17.6581C20.758 16.0286 21.5359 13.9784 21.5359 11.844C21.5359 6.85722 17.3336 2.8 12.1684 2.8C7.00316 2.8 2.80078 6.85722 2.80078 11.844C2.80078 16.8308 7.00316 20.888 12.1684 20.888C14.1074 20.888 15.9553 20.3233 17.5352 19.2514L23.0991 24.8382C23.3317 25.0714 23.6445 25.2 23.9797 25.2C24.2969 25.2 24.5979 25.0832 24.8264 24.8709C25.3119 24.4199 25.3274 23.672 24.8602 23.2029ZM12.1684 5.15931C15.9863 5.15931 19.0922 8.15798 19.0922 11.844C19.0922 15.53 15.9863 18.5287 12.1684 18.5287C8.35046 18.5287 5.2445 15.53 5.2445 11.844C5.2445 8.15798 8.35046 5.15931 12.1684 5.15931Z" fill="#02C076"></path></g><defs><clipPath><rect width="28" height="28" fill="white"></rect></clipPath></defs></svg>
+                                                <input type="text" placeholder="Search from 812 coins">
+                                            </div>
+                                        </div>
+                                        <div class="items--list">
+                                            <div class="coins-list_header coins-list_header-selected">Selected</div>
+                                            <div class="coins-list_item coins-list_selected">
+                                                <div class="coins-list_item-block" data-crypto-item>
+                                                    <div class="coins-list_item-block-info">
+                                                        <div class="image image-active">
+                                                            <img src="./img/crypto/btc.png" alt="Bitcoin">
+                                                        </div>
+                                                        <div class="info">
+                                                            <div class="coin-name">
+                                                                <span>BTC</span>
+                                                                <span class="name">Bitcoin</span>
+                                                            </div>
+                                                            <div class="networks">
+                                                                <div class="item item-active">BSC</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="arrow">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <div class="d-none" data-coin-info-code="BTC">
+                                                    <div class="coins-list_item--networks coins-list_item--networks-active" data-network>
+                                                        <div>
+                                                            Bitcoin 
+                                                            <br>
+                                                            <span data-network-code>BTC</span>
+                                                        </div>
+                                                        <img src="./img/selected.svg" alt="selected">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="coins-list">
+                                                <div class="coins-list_header">All coins</div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/eth.png" alt="Ethereum">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    <span data-coin-code>ETH</span>
+                                                                    <span>Ethereum</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item">ETH</div>
+                                                                    <div class="item">ETH2</div>
+                                                                    <div class="item">WETH</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="ETH">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Ethereum 
+                                                                <br>
+                                                                <span data-network-code>ETH</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Ethereum 2.0 
+                                                                <br>
+                                                                <span data-network-code>ETH2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Wrapped Ethereum 
+                                                                <br>
+                                                                <span  data-network-code>WETH</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/usdt.png" alt="Tether">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    USDT <span>Tether</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >USDT</div>
+                                                                    <div class="item" >USDT_TRC20</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="USDT">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Tether (ERC-20) 
+                                                                <br>
+                                                                <span data-network-code>USDT</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Tether (TRC-20)
+                                                                <br>
+                                                                <span data-network-code>USDT_TRC20</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/bnb.png" alt="Binance Coin">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    BNB <span>Binance Coin</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >BNB</div>
+                                                                    <div class="item" >BNB_ERC20</div>
+                                                                    <div class="item" >BNB_NATIVE</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="BNB">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Binance Coin (BEP-20) 
+                                                                <br>
+                                                                <span data-network-code>BNB</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Binance Coin (ERC-20)
+                                                                <br>
+                                                                <span data-network-code>BNB_ERC20</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks"  data-network>
+                                                            <div>
+                                                                Binance Smart Chain Native
+                                                                <br>
+                                                                <span data-network-code>BNB_NATIVE</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/ada.png" alt="Cardano">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    ADA <span>Cardano</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >ADA</div>
+                                                                    <div class="item" >ADA_NATIVE</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="ADA">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Cardano 
+                                                                <br>
+                                                                <span data-network-code>ADA</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Cardano Native Token
+                                                                <br>
+                                                                <span data-network-code>ADA_NATIVE</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/sol.png" alt="Solana">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    SOL <span>Solana</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >SOL</div>
+                                                                    <div class="item" >WSOL</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="SOL">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Solana 
+                                                                <br>
+                                                                <span data-network-code>SOL</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Wrapped Solana
+                                                                <br>
+                                                                <span data-network-code>WSOL</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rate-swap">
+                                    <div class="swap-coins" data-swap-coins>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_179_12127)"><path d="M13.41 16.59L12 18L16 22L20 18L18.59 16.59L17 18.17V3H15L15 18.17L13.41 16.59Z" fill="#02C076"></path><path d="M10.59 7.41L12 6L8 2L4 6L5.41 7.41L7 5.83L7 21H9V5.83L10.59 7.41Z" fill="#02C076"></path></g><defs><clipPath id="clip0_179_12127"><rect width="24" height="24" fill="white" transform="matrix(0 -1 1 0 0 24)"></rect></clipPath></defs></svg>
+                                    </div>
+                                </div>
+                                <div class="input-select has-select you-get">
+                                    <div class="text-input">
+                                        <input type="text" class="input-wrapper" data-get-input>
+                                        <span class="input-label">You get</span>
+                                    </div>
+                                    <div class="select-input" data-select>
+                                        <div class="select-input_block">
+                                            <img class="selected-item_img" src="./img/crypto/usdt.png" alt="Send crypto" data-get-coin-img>
+                                            <div class="select-input_coin">
+                                                <div class="select-input_name" data-get-coin-name>USDT</div>
+                                                <span class="select-input_network" data-get-coin-network>USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="select-input_arrow">
+                                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 7.3748L0 1.3748L1.075 0.299805L6 5.2498L10.925 0.324804L12 1.3998L6 7.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                        </div>
+                                    </div>
+                                    <div class="items d-none" data-select-list="get">
+                                        <div class="input-search_block">
+                                            <div class="input-search">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="input-search_icon"><g clip-path="url(#clip0_1_3158)"><path d="M24.8602 23.2029L19.3382 17.6581C20.758 16.0286 21.5359 13.9784 21.5359 11.844C21.5359 6.85722 17.3336 2.8 12.1684 2.8C7.00316 2.8 2.80078 6.85722 2.80078 11.844C2.80078 16.8308 7.00316 20.888 12.1684 20.888C14.1074 20.888 15.9553 20.3233 17.5352 19.2514L23.0991 24.8382C23.3317 25.0714 23.6445 25.2 23.9797 25.2C24.2969 25.2 24.5979 25.0832 24.8264 24.8709C25.3119 24.4199 25.3274 23.672 24.8602 23.2029ZM12.1684 5.15931C15.9863 5.15931 19.0922 8.15798 19.0922 11.844C19.0922 15.53 15.9863 18.5287 12.1684 18.5287C8.35046 18.5287 5.2445 15.53 5.2445 11.844C5.2445 8.15798 8.35046 5.15931 12.1684 5.15931Z" fill="#02C076"></path></g><defs><clipPath><rect width="28" height="28" fill="white"></rect></clipPath></defs></svg>
+                                                <input type="text" placeholder="Search from 812 coins">
+                                            </div>
+                                        </div>
+                                        <div class="items--list">
+                                            <div class="coins-list_header coins-list_header-selected">Selected</div>
+                                            <div class="coins-list_item coins-list_selected">
+                                                <div class="coins-list_item-block" data-crypto-item>
+                                                    
+                                                    <div class="coins-list_item-block-info">
+                                                        <div class="image image-active">
+                                                            <img src="./img/crypto/btc.png" alt="Bitcoin">
+                                                        </div>
+                                                        <div class="info">
+                                                            <div class="coin-name">
+                                                                <span>BTC</span>
+                                                                <span class="name">Bitcoin</span>
+                                                            </div>
+                                                            <div class="networks">
+                                                                <div class="item item-active">BSC</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="arrow">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <div class="d-none" data-coin-info-code="BTC">
+                                                    <div class="coins-list_item--networks coins-list_item--networks-active" data-network>
+                                                        <div>
+                                                            Bitcoin 
+                                                            <br>
+                                                            <span data-network-code>BTC</span>
+                                                        </div>
+                                                        <img src="./img/selected.svg" alt="selected">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="coins-list">
+                                                <div class="coins-list_header">All coins</div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/eth.png" alt="Ethereum">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    ETH <span>Ethereum</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item"  >ETH</div>
+                                                                    <div class="item" >ETH2</div>
+                                                                    <div class="item" >WETH</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="ETH">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Ethereum 
+                                                                <br>
+                                                                <span data-network-code>ETH</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Ethereum 2.0 
+                                                                <br>
+                                                                <span data-network-code>ETH2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Wrapped Ethereum 
+                                                                <br>
+                                                                <span  data-network-code>WETH</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/usdt.png" alt="Tether">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    USDT <span>Tether</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >USDT</div>
+                                                                    <div class="item" >USDT_TRC20</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="USDT">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Tether (ERC-20) 
+                                                                <br>
+                                                                <span data-network-code>USDT</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Tether (TRC-20)
+                                                                <br>
+                                                                <span data-network-code>USDT_TRC20</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/bnb.png" alt="Binance Coin">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    BNB <span>Binance Coin</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >BNB</div>
+                                                                    <div class="item" >BNB_ERC20</div>
+                                                                    <div class="item" >BNB_NATIVE</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="BNB">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Binance Coin (BEP-20) 
+                                                                <br>
+                                                                <span data-network-code>BNB</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Binance Coin (ERC-20)
+                                                                <br>
+                                                                <span data-network-code>BNB_ERC20</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Binance Smart Chain Native
+                                                                <br>
+                                                                <span data-network-code>BNB_NATIVE</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/ada.png" alt="Cardano">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    ADA <span>Cardano</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >ADA</div>
+                                                                    <div class="item" >ADA_NATIVE</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="ADA">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Cardano 
+                                                                <br>
+                                                                <span data-network-code>ADA</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Cardano Native Token
+                                                                <br>
+                                                                <span data-network-code>ADA_NATIVE</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="coins-list_item coins-list_item">
+                                                    <div class="coins-list_item-block" data-crypto-item>
+                                                        <div class="coins-list_item-block-info">
+                                                            <div class="image">
+                                                                <img src="./img/crypto/sol.png" alt="Solana">
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="coin-name">
+                                                                    SOL <span>Solana</span>
+                                                                </div>
+                                                                <div class="networks">
+                                                                    <div class="item" >SOL</div>
+                                                                    <div class="item" >WSOL</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="arrow">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.3748L6 9.3748L7.075 8.2998L12 13.2498L16.925 8.3248L18 9.3998L12 15.3748Z" fill="white" fill-opacity="0.38"></path></svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-none" data-coin-info-code="SOL">
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Solana 
+                                                                <br>
+                                                                <span data-network-code>SOL</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="coins-list_item--networks" data-network>
+                                                            <div>
+                                                                Wrapped Solana
+                                                                <br>
+                                                                <span data-network-code>WSOL</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-input input-state mt-4 full-radius">
+                                    <input type="text" class="input-wrapper">
+                                    <span class="input-label">Recipient address</span>
+                                </div>
+                                <div class="text-input input-state mt-4 full-radius">
+                                    <input type="email" class="input-wrapper" data-email>
+                                    <span class="input-label">E-mail (optional)</span>
+                                </div>
+                                <div class="exchange-form-step_content--fees">
+                                    <div class="exchange-form-step_content--fees_item">
+                                        Exchange fee 0.7% 
+                                        <span>0.74010 USDT</span>
+                                    </div>
+                                    <div class="exchange-form-step_content--fees_item">
+                                        Withdraw fee
+                                        <span>3.30167 USDT</span>
+                                    </div>
+                                    <div class="exchange-form-step_content--fees_item">
+                                        Estimated arrival
+                                        <span>5-30 minutes</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="terms-privacy" class="d-none" id="terms-privacy">
+                                        <label for="terms-privacy">
+                                            <span class="not-checked"></span>
+                                            <img src="./img/checked.svg" class="checked" alt="checked">
+                                            I agree with
+                                            <a href="./terms-of-use.html">Terms of Use</a> ,
+                                            <a href="./terms-of-use.html#amlProcedure"> AML/KYC </a> and 
+                                            <a href="/privacy-policy">Privacy Policy</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="main_button" data-create-exchange-button>
+                                    <span class="main_button-text">Create an exchange</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loader" id="exchange-loader">
+                            <img src="./img/loader.svg" alt="Loader">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-header active" data-step="2">
+                    <div class="step-with-id-header">
+                        <div class="d-flex">
+                            <span class="number">2</span>
+                            <h2 class="title">Processing</h2>
+                        </div>
+                        <div class="exchange-id d-none" data-exchange-id>
+                            <div class="uid_desktop">
+                                Exchange ID
+                            </div>
+                            <div class="uid_mobile">
+                                ID
+                            </div>
+                            <span>mwb9294e545</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_179_14637)"><path d="M21 12.22C21 6.73 16.74 3 12 3C7.31 3 3 6.65 3 12.28C2.4 12.62 2 13.26 2 14V16C2 17.1 2.9 18 4 18H5V11.9C5 8.03 8.13 4.9 12 4.9C15.87 4.9 19 8.03 19 11.9V19H11V21H19C20.1 21 21 20.1 21 19V17.78C21.59 17.47 22 16.86 22 16.14V13.84C22 13.14 21.59 12.53 21 12.22Z" fill="white" fill-opacity="0.38"></path><path d="M9 15C9.55228 15 10 14.5523 10 14C10 13.4477 9.55228 13 9 13C8.44772 13 8 13.4477 8 14C8 14.5523 8.44772 15 9 15Z" fill="white" fill-opacity="0.38"></path><path d="M15 15C15.5523 15 16 14.5523 16 14C16 13.4477 15.5523 13 15 13C14.4477 13 14 13.4477 14 14C14 14.5523 14.4477 15 15 15Z" fill="white" fill-opacity="0.38"></path><path d="M17.9985 11.03C17.5185 8.18 15.0385 6 12.0485 6C9.0185 6 5.7585 8.51 6.0185 12.45C8.4885 11.44 9.49805 10.5 9.99805 8.5C11.308 11.13 14.8785 11 17.9985 11.03Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-body">
+                    <div class="exchange-form_content">
+                        <div class="exchange-form_content-title">
+                            Send by one transaction
+                        </div>
+                        <div class="exchange-form_content-desc">
+                            Please use your wallet or exchange account to send money to the following address. We will swap them really fast and at the best rate
+                        </div>
+                        <div class="exchange-form_content-remaining-timer">
+                            <img src="./img/clock.svg" alt="Remaining">
+                            Remaining
+                            <span class="order-status_countdown" data-status-timer>01:30:00</span>
+                        </div>
+                        <div class="exchange-form_content-deposits exchange-form_content-deposits_inputs">
+                            <div class="item">
+                                <div class="item-amount">
+                                    <div class="amount">
+                                        <div class="text">
+                                            You send
+                                        </div>
+                                        <div class="value" data-second-step-send-amount>
+                                            0.02917
+                                        </div>
+                                    </div>
+                                    <div class="coin">
+                                        <img src="https://swapuz.com/img/coin/user/1d5d6d6f-15d2-43f7-b78f-e22afe390b1e.png" data-second-step-img alt="">
+                                        <div class="coin-info">
+                                            <div class="name" data-second-step-coin-code>ETH</div>
+                                            <div class="network" data-second-step-network-code>ETH</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item__copy">
+                                <div class="item-address">
+                                    <div class="address">
+                                        <div class="text">
+                                            Deposit address
+                                        </div>
+                                        <div class="value" data-address>0x0F62909eC9952F20f9d2A94F428c6BE5b3b20B4C</div>
+                                    </div>
+                                </div>
+                                <svg width="20" data-copy-button="data-address" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_113_9642)"><path d="M15 1.66699H7.5C6.58333 1.66699 5.83333 2.41699 5.83333 3.33366V13.3337C5.83333 14.2503 6.58333 15.0003 7.5 15.0003H15C15.9167 15.0003 16.6667 14.2503 16.6667 13.3337V3.33366C16.6667 2.41699 15.9167 1.66699 15 1.66699ZM15 13.3337H7.5V3.33366H15V13.3337ZM2.5 12.5003V10.8337H4.16667V12.5003H2.5ZM2.5 7.91699H4.16667V9.58366H2.5V7.91699ZM8.33333 16.667H10V18.3337H8.33333V16.667ZM2.5 15.417V13.7503H4.16667V15.417H2.5ZM4.16667 18.3337C3.25 18.3337 2.5 17.5837 2.5 16.667H4.16667V18.3337ZM7.08333 18.3337H5.41667V16.667H7.08333V18.3337ZM11.25 18.3337V16.667H12.9167C12.9167 17.5837 12.1667 18.3337 11.25 18.3337ZM4.16667 5.00033V6.66699H2.5C2.5 5.75033 3.25 5.00033 4.16667 5.00033Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                            </div>
+                        </div>
+                        <div class="exchange-form-step_content_qr-fees">
+                            <div class="exchange-form-step_content--fees">
+                                <div class="exchange-form-step_content--fees_item">
+                                    You will receive
+                                    <span>102.07643374300208 USDT</span>
+                                </div>
+                                <div class="exchange-form-step_content--fees_item">
+                                    Recipient address 
+                                    <span>0x2c8273...f658570a</span>
+                                </div>
+                                <div class="exchange-form-step_content--fees_item">
+                                    Estimated arrival 
+                                    <span>5-30 minutes</span>
+                                </div>
+                            </div>
+                            <div id="qr" class="qr-block">
+                                <img src="./img/qr.svg" alt="qr">
+                            </div>
+                        </div>
+                        <div class="exchange-form_content exchange-form_content--steps">
+                            <div class="exchange-form_content--steps__item exchange-form_content--steps__item-active">
+                                <div class="exchange-form_content--steps__item-content">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 28C5.46667 28 5 27.8 4.6 27.4C4.2 27 4 26.5333 4 26V6C4 5.46667 4.2 5 4.6 4.6C5 4.2 5.46667 4 6 4H15.7V6H6V26H15.7V28H6ZM22.2 21.8333L20.7667 20.4L24.1667 17H12.5V15H24.1L20.7 11.6L22.1333 10.1667L28 16.0333L22.2 21.8333Z" fill="white" fill-opacity="0.38"></path></svg>
+                                    <div class="text text-desktop">Send Deposit</div>
+                                    <div class="text text-mobile">Deposit</div>
+                                </div>
+                                <div class="loader-container">
+                                    <div class="loader"></div>
+                                </div>
+                            </div>
+                            <div class="exchange-form_content--steps__item">
+                                <div class="exchange-form_content--steps__item-content">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5664 29.3338V27.3338C18.3442 27.2005 19.1109 26.9838 19.8664 26.6838C20.622 26.3838 21.3553 25.9671 22.0664 25.4338L23.4997 26.9005C22.6109 27.5671 21.6664 28.1005 20.6664 28.5005C19.6664 28.9005 18.6331 29.1782 17.5664 29.3338ZM14.5664 29.3338C11.522 28.8671 9.01085 27.5116 7.03307 25.2671C5.0553 23.0227 4.06641 20.3449 4.06641 17.2338C4.06641 15.5671 4.37752 14.006 4.99974 12.5505C5.62196 11.0949 6.47752 9.82268 7.56641 8.73379C8.6553 7.6449 9.92752 6.78934 11.3831 6.16712C12.8386 5.5449 14.3997 5.23379 16.0664 5.23379H16.7331L14.0997 2.60046L15.5664 1.13379L20.6664 6.23379L15.5664 11.3338L14.0997 9.86712L16.7331 7.23379H16.0664C13.2442 7.23379 10.872 8.1949 8.94974 10.1171C7.02752 12.0393 6.06641 14.4116 6.06641 17.2338C6.06641 19.8338 6.87196 22.0505 8.48307 23.8838C10.0942 25.7171 12.122 26.8671 14.5664 27.3338V29.3338ZM25.5997 24.8005L24.1331 23.3338C24.6442 22.6671 25.0497 21.9449 25.3497 21.1671C25.6497 20.3893 25.8553 19.5782 25.9664 18.7338H27.9997C27.8442 19.8671 27.5609 20.9505 27.1497 21.9838C26.7386 23.0171 26.222 23.956 25.5997 24.8005ZM27.9997 15.7338H25.9664C25.8553 14.956 25.6497 14.1782 25.3497 13.4005C25.0497 12.6227 24.6442 11.8671 24.1331 11.1338L25.5997 9.70046C26.2442 10.5893 26.7664 11.5393 27.1664 12.5505C27.5664 13.5616 27.8442 14.6227 27.9997 15.7338Z" fill="white" fill-opacity="0.38"></path></svg>
+                                    <div class="text">Confirming</div>
+                                </div>
+                            </div>
+                            <div class="exchange-form_content--steps__item">
+                                <div class="exchange-form_content--steps__item-content">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.53398 20.9669C6.08954 20.1669 5.77843 19.3614 5.60065 18.5503C5.42287 17.7391 5.33398 16.9114 5.33398 16.0669C5.33398 13.1558 6.38398 10.6503 8.48398 8.55026C10.584 6.45026 13.0895 5.40026 16.0007 5.40026H17.434L14.7673 2.73359L16.0673 1.43359L21.034 6.40026L16.0673 11.3669L14.734 10.0336L17.3673 7.40026H16.0007C13.6229 7.40026 11.584 8.25026 9.88398 9.95026C8.18398 11.6503 7.33398 13.6891 7.33398 16.0669C7.33398 16.7114 7.3951 17.3225 7.51732 17.9003C7.63954 18.478 7.78954 19.0225 7.96732 19.5336L6.53398 20.9669ZM15.8673 30.6669L10.9007 25.7003L15.8673 20.7336L17.1673 22.0336L14.5007 24.7003H16.0007C18.3784 24.7003 20.4173 23.8503 22.1173 22.1503C23.8173 20.4503 24.6673 18.4114 24.6673 16.0336C24.6673 15.3891 24.6118 14.778 24.5007 14.2003C24.3895 13.6225 24.2229 13.078 24.0007 12.5669L25.434 11.1336C25.8784 11.9336 26.1951 12.7391 26.384 13.5503C26.5729 14.3614 26.6673 15.1891 26.6673 16.0336C26.6673 18.9447 25.6173 21.4503 23.5173 23.5503C21.4173 25.6503 18.9118 26.7003 16.0007 26.7003H14.5007L17.1673 29.3669L15.8673 30.6669Z" fill="white" fill-opacity="0.38"></path></svg>
+                                    <div class="text">Exchanging</div>
+                                </div>
+                            </div>
+                            <div class="exchange-form_content--steps__item">
+                                <div class="exchange-form_content--steps__item-content">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.3 28V26H26V6H16.3V4H26C26.5333 4 27 4.2 27.4 4.6C27.8 5 28 5.46667 28 6V26C28 26.5333 27.8 27 27.4 27.4C27 27.8 26.5333 28 26 28H16.3ZM13.7 21.8333L12.2667 20.4L15.6667 17H4V15H15.6L12.2 11.6L13.6333 10.1667L19.5 16.0333L13.7 21.8333Z" fill="white" fill-opacity="0.38"></path></svg>
+                                    <div class="text">Sending</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="step-header active"  data-step="3">
+                    <div class="step-with-id-header">
+                        <div class="d-flex">
+                            <span class="number">3</span>
+                            <h2 class="title">Processing</h2>
+                        </div>
+
+                        <div class="exchange-id d-none" data-exchange-id-step-3>
+                            <div class="uid_desktop">
+                                Exchange ID
+                            </div>
+                            <div class="uid_mobile">
+                                ID
+                            </div>
+                            <span>mwb9294e545</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_179_14637)"><path d="M21 12.22C21 6.73 16.74 3 12 3C7.31 3 3 6.65 3 12.28C2.4 12.62 2 13.26 2 14V16C2 17.1 2.9 18 4 18H5V11.9C5 8.03 8.13 4.9 12 4.9C15.87 4.9 19 8.03 19 11.9V19H11V21H19C20.1 21 21 20.1 21 19V17.78C21.59 17.47 22 16.86 22 16.14V13.84C22 13.14 21.59 12.53 21 12.22Z" fill="white" fill-opacity="0.38"></path><path d="M9 15C9.55228 15 10 14.5523 10 14C10 13.4477 9.55228 13 9 13C8.44772 13 8 13.4477 8 14C8 14.5523 8.44772 15 9 15Z" fill="white" fill-opacity="0.38"></path><path d="M15 15C15.5523 15 16 14.5523 16 14C16 13.4477 15.5523 13 15 13C14.4477 13 14 13.4477 14 14C14 14.5523 14.4477 15 15 15Z" fill="white" fill-opacity="0.38"></path><path d="M17.9985 11.03C17.5185 8.18 15.0385 6 12.0485 6C9.0185 6 5.7585 8.51 6.0185 12.45C8.4885 11.44 9.49805 10.5 9.99805 8.5C11.308 11.13 14.8785 11 17.9985 11.03Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-body">
+                    <div class="exchange-form_content">
+                        <div class="exchange-form_content-title">
+                            Successfully completed
+                        </div>
+                        <div class="exchange-form-step_content_qr-fees date">
+                            <div class="exchange-form-step_content--fees_item">
+                                Date
+                                <span>23 January 2022 09:12 UTC</span>
+                            </div>
+                        </div>
+                        <div class="exchange-form_content-deposits exchange-form_content-deposits_inputs">
+                            <div>
+                                <div class="item">
+                                    <div class="item-amount">
+                                        <div class="amount">
+                                            <div class="text">
+                                                You get
+                                            </div>
+                                            <div class="value" data-third-step-get-amount>
+                                                0.02917
+                                            </div>
+                                        </div>
+                                        <div class="coin">
+                                            <img src="https://swapuz.com/img/coin/user/1d5d6d6f-15d2-43f7-b78f-e22afe390b1e.png" data-third-step-get-img alt="">
+                                            <div class="coin-info">
+                                                <div class="name" data-third-step-get-coin-code>ETH</div>
+                                                <div class="network" data-second-step-get-network-code>ETH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="exchange-form-step_content_qr-fees date">
+                                    <div class="exchange-form-step_content--fees_item exchange-form-step_content--fees_item-with-copy">
+                                        <div>
+                                            Recipient address:
+                                            <a href="#" class="exchange-form-step_content--fees_link" data-recipiend-address target="_blank">
+                                                wwwe67gf78s8a9s9aqwqwqwqw092
+                                            </a>
+                                        </div>
+                                        <svg width="20" data-copy-button="data-recipiend-address" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_113_9642)"><path d="M15 1.66699H7.5C6.58333 1.66699 5.83333 2.41699 5.83333 3.33366V13.3337C5.83333 14.2503 6.58333 15.0003 7.5 15.0003H15C15.9167 15.0003 16.6667 14.2503 16.6667 13.3337V3.33366C16.6667 2.41699 15.9167 1.66699 15 1.66699ZM15 13.3337H7.5V3.33366H15V13.3337ZM2.5 12.5003V10.8337H4.16667V12.5003H2.5ZM2.5 7.91699H4.16667V9.58366H2.5V7.91699ZM8.33333 16.667H10V18.3337H8.33333V16.667ZM2.5 15.417V13.7503H4.16667V15.417H2.5ZM4.16667 18.3337C3.25 18.3337 2.5 17.5837 2.5 16.667H4.16667V18.3337ZM7.08333 18.3337H5.41667V16.667H7.08333V18.3337ZM11.25 18.3337V16.667H12.9167C12.9167 17.5837 12.1667 18.3337 11.25 18.3337ZM4.16667 5.00033V6.66699H2.5C2.5 5.75033 3.25 5.00033 4.16667 5.00033Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                    </div>
+                                </div>
+                                <div class="exchange-form-step_content_qr-fees date">
+                                    <div class="exchange-form-step_content--fees_item exchange-form-step_content--fees_item-with-copy">
+                                        <div>
+                                            Hash out:
+                                            <a href="#" class="exchange-form-step_content--fees_link" data-hash-out target="_blank">
+                                                12.67qf78s8a67gf78s8a9sqwqwqwqwqw0929s9aq...
+                                            </a>
+                                        </div>
+                                        <svg width="20" data-copy-button="data-hash-out" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_113_9642)"><path d="M15 1.66699H7.5C6.58333 1.66699 5.83333 2.41699 5.83333 3.33366V13.3337C5.83333 14.2503 6.58333 15.0003 7.5 15.0003H15C15.9167 15.0003 16.6667 14.2503 16.6667 13.3337V3.33366C16.6667 2.41699 15.9167 1.66699 15 1.66699ZM15 13.3337H7.5V3.33366H15V13.3337ZM2.5 12.5003V10.8337H4.16667V12.5003H2.5ZM2.5 7.91699H4.16667V9.58366H2.5V7.91699ZM8.33333 16.667H10V18.3337H8.33333V16.667ZM2.5 15.417V13.7503H4.16667V15.417H2.5ZM4.16667 18.3337C3.25 18.3337 2.5 17.5837 2.5 16.667H4.16667V18.3337ZM7.08333 18.3337H5.41667V16.667H7.08333V18.3337ZM11.25 18.3337V16.667H12.9167C12.9167 17.5837 12.1667 18.3337 11.25 18.3337ZM4.16667 5.00033V6.66699H2.5C2.5 5.75033 3.25 5.00033 4.16667 5.00033Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <div class="item-amount">
+                                        <div class="amount">
+                                            <div class="text">
+                                                You send
+                                            </div>
+                                            <div class="value" data-third-step-send-amount>
+                                                0.02917
+                                            </div>
+                                        </div>
+                                        <div class="coin">
+                                            <img src="https://swapuz.com/img/coin/user/1d5d6d6f-15d2-43f7-b78f-e22afe390b1e.png" data-third-step-send-img alt="">
+                                            <div class="coin-info">
+                                                <div class="name" data-third-step-send-coin-code>ETH</div>
+                                                <div class="network" data-third-step-send-network-code>ETH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exchange-form-step_content_qr-fees date">
+                                    <div class="exchange-form-step_content--fees_item exchange-form-step_content--fees_item-with-copy">
+                                        <div>
+                                            Deposit address:
+                                            <a href="#" class="exchange-form-step_content--fees_link" data-deposit-address target="_blank">
+                                                wwwe67gf78s8a9s9aqwqwqwqw091
+                                            </a>
+                                        </div>
+                                        <svg width="20" data-copy-button="data-deposit-address" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_113_9642)"><path d="M15 1.66699H7.5C6.58333 1.66699 5.83333 2.41699 5.83333 3.33366V13.3337C5.83333 14.2503 6.58333 15.0003 7.5 15.0003H15C15.9167 15.0003 16.6667 14.2503 16.6667 13.3337V3.33366C16.6667 2.41699 15.9167 1.66699 15 1.66699ZM15 13.3337H7.5V3.33366H15V13.3337ZM2.5 12.5003V10.8337H4.16667V12.5003H2.5ZM2.5 7.91699H4.16667V9.58366H2.5V7.91699ZM8.33333 16.667H10V18.3337H8.33333V16.667ZM2.5 15.417V13.7503H4.16667V15.417H2.5ZM4.16667 18.3337C3.25 18.3337 2.5 17.5837 2.5 16.667H4.16667V18.3337ZM7.08333 18.3337H5.41667V16.667H7.08333V18.3337ZM11.25 18.3337V16.667H12.9167C12.9167 17.5837 12.1667 18.3337 11.25 18.3337ZM4.16667 5.00033V6.66699H2.5C2.5 5.75033 3.25 5.00033 4.16667 5.00033Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                    </div>
+                                </div>
+                                <div class="exchange-form-step_content_qr-fees date">
+                                    <div class="exchange-form-step_content--fees_item exchange-form-step_content--fees_item-with-copy">
+                                        <div>
+                                            Hash in:
+                                            <a href="#" class="exchange-form-step_content--fees_link" data-hash-in target="_blank">
+                                                12.67qf78s8a67gf78s8a9sqwqwqwqwqw0929s8aq...
+                                            </a>
+                                        </div>
+                                        <svg width="20" data-copy-button="data-hash-in" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_113_9642)"><path d="M15 1.66699H7.5C6.58333 1.66699 5.83333 2.41699 5.83333 3.33366V13.3337C5.83333 14.2503 6.58333 15.0003 7.5 15.0003H15C15.9167 15.0003 16.6667 14.2503 16.6667 13.3337V3.33366C16.6667 2.41699 15.9167 1.66699 15 1.66699ZM15 13.3337H7.5V3.33366H15V13.3337ZM2.5 12.5003V10.8337H4.16667V12.5003H2.5ZM2.5 7.91699H4.16667V9.58366H2.5V7.91699ZM8.33333 16.667H10V18.3337H8.33333V16.667ZM2.5 15.417V13.7503H4.16667V15.417H2.5ZM4.16667 18.3337C3.25 18.3337 2.5 17.5837 2.5 16.667H4.16667V18.3337ZM7.08333 18.3337H5.41667V16.667H7.08333V18.3337ZM11.25 18.3337V16.667H12.9167C12.9167 17.5837 12.1667 18.3337 11.25 18.3337ZM4.16667 5.00033V6.66699H2.5C2.5 5.75033 3.25 5.00033 4.16667 5.00033Z" fill="white" fill-opacity="0.38"></path></g><defs><clipPath><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_button" data-create-new-exchange-button>
+                            <span class="main_button-text">Create new exchange</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer_main">
+                    <img src="./img/logo.svg" alt="Logo">
+                    <p class="footer_main--text">
+                        Do you want to make operations with Swapuz as handy as possible? Add
+                        it to bookmarks in one click!
+                    </p>
+                </div>
+                <div class="footer_links">
+                    <div class="footer_links-nav">
+                        <div class="footer_links--item">
+                            <h4 class="title">Company</h4>
+                            <a href="./about-us.html" class="link">About</a>
+                            <a href="./contact.html" class="link">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="footer_links-socials">
+                        <div class="footer_links--item">
+                            <h4 class="title">Follow Us</h4>
+                            <div class="socials">
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/linkedin.svg" alt="linkedin">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/discord.svg" alt="discord">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/twitter.svg" alt="twitter">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/telegram.svg" alt="telegram">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights">
+                Copyright © 2020 - 2024 Swapuz!
+                <div class="footer-copyrights_links">
+                    <a href="./terms-of-use.html" class="">Terms of Use</a>
+                    <a href="./terms-of-use.html#amlProcedure" class=""> AML/KYC </a>
+                    <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="allow-cookies-message d-none" id="cookies-banner">
+        <div class="message">
+            <p>By continuing to use the site you agree to the
+                <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                and consent to the use of cookies
+            </p>
+            <div class="button" id="agree-use-cookies">I agree</div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/exchange.js"></script>
+    <script src="./js/input.js"></script>
+</body>
+
+</html>

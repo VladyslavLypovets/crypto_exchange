@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-block header-block_desktop">
+                <div class="header-block-main">
+                    <a href="./index.html" class="router-link-active router-link-exact-active">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="./about-us.html" class="item">About</a>
+                    <a href="./contact.html" class="item">Contacts</a>
+                </div>
+                <div class="lang" id="lang">
+                    <span class="flag">
+                        <img src="./img/en.svg" alt="Active Lang" id="active-lang-img">
+                    </span>
+                    <div class="selected-lang-text">
+                        <span id="active-lang-text">
+                            English
+                        </span>
+                        <img src="./img/chewron-down.svg" alt="chewron-down">
+                    </div>
+                    <div class="selected-lang-text_mob" id="active-lang-text-mobile">En</div>
+                    <div class="lang--block d-none" id="lang-list">
+                        <div class="item d-none" data-value="en">
+                            <span class="flag">
+                                <img src="./img/en.svg" alt="english">
+                            </span>
+                            <span class="lang-text">
+                                English
+                            </span>
+                        </div>
+                        <div class="item" data-value="ru">
+                            <span class="flag">
+                                <img src="./img/ru.svg" alt="Русский">
+                            </span>
+                            <span class="lang-text">
+                                Русский
+                            </span>
+                        </div>
+                        <div class="item" data-value="de">
+                            <span class="flag">
+                                <img src="./img/de.svg" alt="deutsch">
+                            </span>
+                            <span class="lang-text">
+                                Deutsch
+                            </span>
+                        </div>
+                        <div class="item" data-value="ua">
+                            <span class="flag">
+                                <img src="./img/ua.svg" alt="Українська">
+                            </span>
+                            <span class="lang-text">
+                                Українська
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-block header-block_mob">
+                <div class="menu-block d-none" data-mobile-header-menu>
+                    <div class="menu">
+                        <div class="burger burger-close" data-mobile-header-menu-close>
+                            <img src="./img/close.svg" alt="Close">
+                        </div>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="item"><a href="./index.html">Main</a></div>
+                        <div class="item"><a href="./about-us.html">About</a></div>
+                        <div class="item"><a href="./contact.html">Contacts</a></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="burger" data-mobile-burger>
+                        <img src="./img/burger.svg" alt="Burger">
+                    </div>
+                    <a aria-current="page" href="./index.html" class="router-link-active router-link-exact-active">
+                        <img src="./img/logo.svg" alt="Logo">
+                    </a>
+                    <div class="lang_block">
+                        <div class="lang" data-lang-mobile>
+                            <span class="flag">
+                                <img src="./img/en.svg" alt="English">
+                            </span>
+                            <div class="selected-lang-text_mob">En</div>
+                        </div>
+                        <div class="menu-block d-none" data-lang-list-mobile>
+                            <div class="menu">
+                                <div class="burger burger-close" data-close-lang-list-mobile>
+                                    <img src="./img/close.svg" alt="close">
+                                </div>
+                            </div>
+                            <div class="nav-menu">
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/en.svg" alt="English">
+                                    </span>
+                                    English
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/ru.svg" alt="Русский">
+                                    </span>
+                                    Русский
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/de.svg" alt="Deutsch">
+                                    </span>
+                                    Deutsch
+                                </div>
+                                <div class="item">
+                                    <span class="flag">
+                                        <img src="./img/ua.svg" alt="Українська">
+                                    </span>
+                                    Українська
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="terms-of-use">
+        <div class="container">
+            <div class="terms_block">
+                <h1 class="terms_title main-h1">
+                    Terms of Use
+                </h1>
+                <p class="terms_text terms_text-center"> Update: 17.07.2024.</p>
+                <p class="terms_text">
+                    This document covers general rules for using the Swapuz virtual currency exchange service, lists the main risks and prohibited jurisdictions, describes KYC/AML and refund procedures, and illustrates other important legal aspects. You must read, understand and agree to these Terms of Use before using any Swapuz services.
+                </p>
+                <h2 class="terms-h2">1. General Provisions</h2>
+                <div class="terms-list--item terms_text">
+                    <div class="num">1.1</div>
+                    <span>
+                        These Terms of Use regulate relations pertaining to the using of the website (hereinafter – "Website").
+                    </span>
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">1.2</div>
+                    The following terminology applies to these Terms of Use:
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div>
+                        <span><b>"User"</b>, <b>"You"</b> and <b>"Your"</b> refers to you, the natural person (individual) accessing the Website, using our services through the Website and accepting these Terms of Use. </span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div>
+                        <span><b>"Swapuz"</b>, <b>"Services"</b>, <b>"Ourselves"</b>, <b>"We"</b>, and <b>"Us"</b> refers to the company LIMITED LIABILITY COMPANY «METACHAIN», duly organized under the laws of Ukraine. </span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div>
+                        <span><b>"Party"</b> refers to either you or us. For the avoidance of any doubt, the contracting Parties under these Terms of Use are you and Swapuz.</span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div>
+                        <span><b>"Digital Asset"</b>, "Cryptocurrency" refer to blockchain-based software ledger data entries.</span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div><span><b>"Exchange"</b> means the swap of a crypto asset for another
+                            or the same one crypto asset in other blockchain.</span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div><span><b>"Crypto Assets"</b> means a type of assets that can be
+                            transferred only and exclusively using blockchain technology, including, but not limited to
+                            digital coins and digital tokens, and any other digital mediums of exchange.</span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div><span><b>"Floating Rate Exchange"</b> means a floating rate
+                            cryptocurrency exchange performed at the current most profitable rate on the market, at
+                            which the Service does not guarantee this rate.</span>
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div><span><b>"Fixed Rate Exchange"</b> means an exchange performed at the
+                            same rate which is displayed to the client at the beginning of an exchange, regardless of
+                            subsequent rate fluctuations.</span>
+                    </div>
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">1.3</div> These Terms of Use are open and public document.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">1.4</div> In these Terms of Use, unless otherwise specified, the words importing
+                    the singular include the plural and vice versa, and the words importing gender include all genders.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">1.5</div> The user accepts that the Terms of Use may be updated by Swapuz at any
+                    time. If the user does not read and accept the Terms of Use, the User should not use or continue
+                    using the Services.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">1.6</div> We reserve the right to change, supplement or modify these Terms of Use
+                    from time to time at our sole discretion. The amended Terms of Use will be effective immediately
+                    upon posting on the Website.
+                </div>
+                <h2 class="terms-h2">2. Using of Services</h2>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.1</div> By using the website, you accept these Terms of Use and agree that you
+                    are responsible for compliance with all applicable laws, and regulations.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.2</div> Before you start working with the Website, you need to be sure that you
+                    meet some basic requirements:
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you do not use VPN to mask your physical location from a restricted
+                        jurisdiction.
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you are lawfully permitted to access this website under the laws of
+                        the jurisdiction on which you reside and located.
+                    </div>
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.3</div> Accepting the terms of the floating exchange option, also called
+                    «Floating Rate Exchange» means you acknowledge and agree that the information about the exchange
+                    rates for the floating rate option is indicative and may differ from the actual exchange rate.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.4</div> By using the "Fixed Exchange Rate" you acknowledge and agree that the
+                    fixed exchange rate may differ from the floating exchange rate. <br> Swapuz shall complete the
+                    exchange if the following requirements are met:
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> We received the crypto asset at the time specified in the timer,
+                        after the user created the exchange. It is important to note that a payment transmitted to the
+                        blockchain network does not mean that Swapuz accepts this payment. The number of payment
+                        confirmations is determined by us depending on the blockchain.
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> The user sent a crypto asset to a specially created address on the
+                        page of the exchange, in the network specified by the user.
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> The user sent the exact amount that was displayed on the website, as
+                        well as took into account all relevant withdrawal fees and network fees.
+                    </div>
+                </div>
+                <div class="terms-list--item terms_text"> If the situation allows for an exchange, the transaction will
+                    be pushed through at the rate that was confirmed by the user at the beginning of the exchange. <br>
+                    If the market situation is such that the transaction cannot be executed anymore, the crypto assets
+                    will be refunded, if possible. <br> If the user sent an inaccurate amount, Swapuz may, at its
+                    discretion, decide to complete exchange at the specified or current rate. </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.5</div> When you exchange crypto assets, you acknowledge and agree that we
+                    cooperate with third-party liquidity providers, and we can use their services to complete the
+                    exchange.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.6</div> The Website provides non-custodial services, which means that we do not
+                    store your Crypto Assets on deposits and balances.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.7</div> By accepting these Terms and using the Website, you represent and warrant
+                    that:
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you are at least 18 years old and have full capacity to contract
+                        under the applicable law;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> are not located in, under the control of, or a national or resident
+                        of the prohibited jurisdictions (Section 10 hereunder);
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you are only transacting on the Website with legally-obtained funds
+                        that rightfully belong to you;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you are not furthering, performing, undertaking, engaging in, aiding
+                        or abetting any unlawful activity through your relationship with us or through your use of the
+                        Website and our services;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you shall use the Website and our services only for the purposes
+                        related to personal non-commercial use and you do not represent any third party;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you understand that engaging in the change of the Cryptocurrency may
+                        be risky;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you acknowledge and agree that Swapuz is not acting as your broker,
+                        intermediary, agent or advisor or in any fiduciary capacity, and no communication or information
+                        provided to you by Swapuz shall be considered or construed as advice;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you shall not mislead other Users and third parties during using the
+                        Website;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you will not take any action aimed solely at causing damage to
+                        Swapuz or other third parties;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you shall not reverse engineer, decompile or otherwise disassemble
+                        the Website or any Swapuz software;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> recognizing the international nature of the Internet, you accept all
+                        responsibility for compliance with all local laws and regulations relating to your actions in
+                        the network;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you agree and consent to receive electronically all communications,
+                        agreements, documents, receipts, notices and disclosures that Swapuz provides in connection with
+                        your use of the Website and our services;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you understand and acknowledge that any delays in services are
+                        possible;
+                    </div>
+                </div>
+                <div class="terms-list--item-lvl">
+                    <div class="terms-list--item terms_text">
+                        <div class="symbol">•</div> you shall not use proxy and VPN or other software for concealing
+                        your IP-address.
+                    </div>
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">2.8</div> In order to protect the integrity of the Website, Swapuz reserves the
+                    right at any time in its sole discretion to block users who violate these Terms of Use.
+                </div>
+                <div class="terms-h2">3. Personal Data</div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">3.1</div> By accepting these Terms, you expressly allow Swapuz to process your
+                    personal data, export your personal data outside of the jurisdiction in which you reside or are
+                    located.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">3.2</div> We are entitled to transfer some User’s data (including IP-addresses) to
+                    our business partners or governmental bodies at their request to facilitate the prevention and
+                    disclosure of prohibited or illegal actions. By accepting these Terms, you acknowledge and agree to
+                    your personal data may be transferred in this way.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">3.3</div><span>For more information, read the official Swapuz Privacy Policy <a
+                            href="./privacy-policy" class="">here</a></span>
+                </div>
+                <h2 id="amlProcedure" class="terms-h2">4. AML/KYC Procedure</h2>
+                <div class="terms-list--item terms_text">
+                    <div class="num">4.1</div> We maintain a Know-Your-Customer (KYC) policy to comply with Record
+                    keeping Requirements. If your proposed purchase is flagged through our internal controls or an
+                    exchange partner’s internal controls, we reserve the right to refund your exchange, less any
+                    applicable fees incurred by the Company during such refund process. We may not make Services
+                    available in all markets and jurisdictions. The Services are not intended for use by individuals who
+                    are citizens or nationals of or resident in a restricted location, where the local laws prohibit you
+                    at any time (by reason of your nationality, domicile, citizenship, residence or otherwise) to access
+                    or use the Services. At this time, restricted locations include the United States of America,
+                    Canada, France, North Korea, Sudan, Russian-occcupied regions of Ukraine(Donetsk, Kherson, Luhansk,
+                    Zaporizhzhia,Crimea and Sevastopol), Republic of Cuba, Syrian Arab Republic, People’s Republic of
+                    China, Japan, Republic of Iraq, Republic of Yemen, Federal Republic of Somalia, Republic of Congo,
+                    State of Libya, Republic of Liberia, State of Eritrea, Republic of Mali, Republic of Zimbabwe,
+                    Republic of Côte d’Ivoire, Mainland China, Singapore, Germany, Hong Kong, Malaysia, Malta, Spain,
+                    Netherlands, Bolivia, UK, Myanmar, Venezuela, Uzbekistan, Austria, India, Indonesia, the Islamic
+                    Republic of Iran and any state, country or other jurisdiction that is embargoed by England and
+                    Wales. For greater clarity, the content of the Terms shall not be excluded from the laws of the
+                    country or region under which the User belongs. As a result, if you do not meet these eligibility
+                    requirements, do not use our Services.
+                </div>
+                <h2 class="terms-h2">5. Exchange Rates, Fees and Confirmations</h2>
+                <div class="terms-list--item terms_text">
+                    <div class="num">5.1</div> Exchange rates are constantly updated, Swapuz tries to deliver
+                    information about exchange rate changes to the User as comfortably as possible, but this is not a
+                    requirement on our party.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">5.2</div> The user can always track the current rates on the main page of the
+                    website or ask the support team.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">5.3</div> Exchange fees, as well as all third-party commissions, are included in
+                    the rate provided on the Website.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">5.4</div> Swapuz fees are subject to change at any time, without notice to the
+                    User.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">5.5</div> To start the exchange requires the full passage of all required deposit
+                    confirmations. The number of confirmations may vary depending on the blockchain, if possible our
+                    party provides the required number of confirmations on the status "Confirming" otherwise the User
+                    can request information about deposit confirmations from the support team.
+                </div>
+                <h2 class="terms-h2">6. Refund Policy</h2>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.1</div> Cryptocurrency and Digital Assets are, by their nature, generally
+                    irreversible, and their exchange rates are highly volatile and transitory. We cannot be responsible
+                    for any risk in use of the Website, including but not limited to exchange rate risk and market risk.
+                    All sales and transactions after the Swapuz exchange are final and amount is non-refundable.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.2</div> There are minimum amounts on the website in the User interface, please do
+                    not send less than the minimum amount. <br> Otherwise Swapuz is not responsible for these funds and
+                    will decide individually for each deposit to refund or complete an exchange.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.3</div> Service is not responsible if the User has sent a deposit not on the
+                    specified network, unfortunately, such funds are very rare to return. <br> Swapuz team will help the
+                    user in this case, if possible.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.4</div> Swapuz is not responsible for funds that have been sent to the fake
+                    phishing sites. It is important that all Users shall verify they are visiting the correct URL
+                    (swapuz.com) on their own and search for the security certificate in the URL bar of their browser.
+                    <br> Also, never trust private messages, solicitations or requests for funds from people claiming to
+                    be Swapuz unless you have verified that it is an official request from a Swapuz employee. <br> In
+                    case of doubt, contact us directly to verify any messaging.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.5</div> Fake tokens or Imitation tokens mean tokens that have no value. Despite
+                    mimicking the existing project and having the same name or logo, such tokens do not have the
+                    contract address of the project. Swapuz checks the contract of the sent token, and if it does not
+                    match the official token contract, the deposit will not be recognized by the system. In case of
+                    receiving Fake tokens or Imitation tokens to its deposit address, Swapuz shall not exchange or
+                    return such tokens.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.6</div> The average refund time can take from 1 to 7 business days. <br> In case
+                    our trading account has been restricted by a liquidity provider or a law enforcement agency, the
+                    refund may take indefinitely, depending on the above-mentioned authorities.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">6.7</div> If your exchange or deposit is suspected of fraud, the Service reserves
+                    the right to suspend the refund or exchange indefinitely to allow the customer to pass the KYC.
+                </div>
+                <h2 class="terms-h2">7. Prohibited Jurisdictions</h2>
+                <div class="terms-list--item terms_text">
+                    <div class="num">7.1</div><span> Swapuz maintains the right to select its markets and jurisdictions
+                        to operate in and may restrict or deny its services to certain countries. You can read about the
+                        prohibited jurisdictions <a href="#"> here</a>. </span>
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">7.2</div> Swapuz also maintains the right to use various methods to prevent the use
+                    of the Website and its services by the Users listed above. You are to comply with this Section, even
+                    if Swapuz methods to prevent use of its services and the Website are not effective or can be
+                    bypassed.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">7.3</div> Use of the Website is void where prohibited by applicable law.
+                </div>
+                <div class="terms-list--item terms_text">
+                    <div class="num">7.4</div> Swapuz has the right to obtain your IP-address. If the IP-address is
+                    allocated in the prohibited jurisdiction (Section 10 hereunder), Swapuz can deny you the access to
+                    the Website and providing services.
+                </div>
+                <div class="buttons">
+                    <a href="./index.html" class="button">
+                        Back to main
+                        <img src="./img/arrow-back.svg" alt="Back to main">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer_main">
+                    <img src="./img/logo.svg" alt="Logo">
+                    <p class="footer_main--text">
+                        Do you want to make operations with Swapuz as handy as possible? Add
+                        it to bookmarks in one click!
+                    </p>
+                </div>
+                <div class="footer_links">
+                    <div class="footer_links-nav">
+                        <div class="footer_links--item">
+                            <h4 class="title">Company</h4>
+                            <a href="./about-us.html" class="link">About</a>
+                            <a href="./contact.html" class="link">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="footer_links-socials">
+                        <div class="footer_links--item">
+                            <h4 class="title">Follow Us</h4>
+                            <div class="socials">
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/linkedin.svg" alt="linkedin">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/discord.svg" alt="discord">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/twitter.svg" alt="twitter">
+                                </a>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <img src="./img/telegram.svg" alt="telegram">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="./img/youtube.svg" alt="youtube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights">
+                Copyright © 2020 - 2024 Swapuz!
+                <div class="footer-copyrights_links">
+                    <a href="./terms-of-use.html" class="">Terms of Use</a>
+                    <a href="./terms-of-use.html#amlProcedure" class=""> AML/KYC </a>
+                    <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="allow-cookies-message d-none" id="cookies-banner">
+        <div class="message">
+            <p>By continuing to use the site you agree to the
+                <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                and consent to the use of cookies
+            </p>
+            <div class="button" id="agree-use-cookies">I agree</div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

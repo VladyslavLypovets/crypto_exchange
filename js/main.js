@@ -30,21 +30,30 @@ $(document).ready(function(){
     // close support block
     $('#support-block .close').click(function() {
         $('#support-block').addClass('d-none');
-    })
+    });
 
-    // order block count animation
-    const countTill = cryptoData.length;
-    let step = Math.round(countTill / 50);
-    let index = 0;
-    const interval = setInterval(() => {
-        const difference = countTill - index;
-        if (index === countTill) {
-            clearInterval(interval);
-        }
-        index += step;
-        if (index >= countTill) {
-            index = countTill;
-        }
-        $('#order-block-count').text(index);
-    }, 70);
+    // Open lang list on mobile
+    $('[data-lang-mobile]').click(function() {
+        $('[data-lang-list-mobile]').removeClass('d-none');
+    });
+
+    // Close lang list on mobile
+    $('[data-close-lang-list-mobile]').click(function() {
+        $('[data-lang-list-mobile]').addClass('d-none');
+    });
+
+    // handle lang change
+    $('[data-lang-list-mobile] .item').click(function() {
+        $('[data-lang-list-mobile]').addClass('d-none');
+    });
+
+    // open mobile menu
+    $('[data-mobile-burger]').click(function() {
+        $('[data-mobile-header-menu]').removeClass('d-none');
+    });
+
+    // close mobile menu
+    $('[data-mobile-header-menu-close]').click(function() {
+        $('[data-mobile-header-menu]').addClass('d-none');
+    });
 });
